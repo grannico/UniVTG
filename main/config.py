@@ -361,7 +361,7 @@ def setup_model(opt):
 
     if opt.resume is not None:
         logger.info(f"Load checkpoint from {opt.resume}")
-        checkpoint = torch.load(opt.resume, map_location="cpu")
+        checkpoint = torch.load(opt.resume, map_location="cpu", weights_only=False)
         
         for key in list(checkpoint["model"].keys()):
             checkpoint["model"][key.replace('module.', '')] = checkpoint["model"].pop(key)
