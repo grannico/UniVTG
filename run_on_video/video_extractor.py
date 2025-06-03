@@ -52,7 +52,7 @@ def vid2clip(model, vid_path, output_file,
                 if len(video.shape) == 4:
                     video = preprocess(video)
                     n_chunk = len(video)
-                    vid_features = th.zeros((n_chunck, output_feat_size), device=device_id)
+                    vid_features = th.zeros((n_chunk, output_feat_size), device=device_id)
                     n_iter = int(math.ceil(n_chunk))
                     for i in range(n_iter):
                         min_ind = i
