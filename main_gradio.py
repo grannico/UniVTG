@@ -184,4 +184,4 @@ with gr.Blocks(css=css) as demo:
     vidsub_btn.click(subvid_fn, [video_id], [video_inp])
 
 demo.queue()
-demo.launch(server_port=2253, debug=True, share=True, allowed_paths=["/content/UniVTG/examples")
+demo.launch(server_port=2253, debug=True, share=True, allowed_paths=["/content/UniVTG/examples"])
