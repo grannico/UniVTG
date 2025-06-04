@@ -169,7 +169,8 @@ with gr.Blocks(css=css) as demo:
             examples=[["./examples/charades.mp4"],
                       ["./examples/soccer.mp4"],
                       ["./examples/dog.mp4"],
-                      ["./examples/videoplayback.mp4"]
+                      ["./examples/videoplayback.mp4"],
+                      ["./examples/psg_inter.mp4"]
                       ],
             inputs=[video_inp],
         )
